@@ -38,8 +38,8 @@ Association
 
 Association
 
-- has_many:delivery
-- belongs_to :users
+- has_many:deliverys
+- belongs_to :user
 
 
 ##  deliveryテーブル
@@ -58,12 +58,15 @@ Association
  Association
 
  - belongs_to :purchace
- - belongs_to :users
+
 
 ## Purchace
 | Column      | Type       | Options                        |
 | item        | references | foreign_key: true              |
 | user        | references | foreign_key: true              |
 
+Association
+
 - belongs_to:user
 - belongs_to:item
+- has_many: deliverys

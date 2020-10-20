@@ -1,13 +1,13 @@
-<mxfile host="65bd71144e" modified="2020-10-20T05:33:45.562Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.48.2 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" version="13.6.5" etag="Lc-GDEs_qumboZbbMVjN">
+<mxfile host="65bd71144e" modified="2020-10-20T06:31:33.340Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.48.2 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" version="13.6.5" etag="AYscajmGIugHMEPWVRGt">
     <diagram id="DOknXRsjYY6oh1aq2rMa" name="ページ1">
-        <mxGraphModel dx="1613" dy="972" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1936" dy="1360" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="24" value="users" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
                     <mxGeometry x="30" y="180" width="240" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="&#10;nickname : string :null false&#10;email :string :null flase &#10;password :string :null flase &#10; first_name :string :null flase&#10;last_name :string :null flase&#10;birthday :date :null flase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="24">
+                <mxCell id="27" value="&#10;nickname : string :null false&#10;email :string :null false &#10;password :string :null false &#10; first_name :string :null false&#10;first_name_kana :string null false &#10;last_name :string :null false&#10;last_name_kana :string null false&#10;birthday :date :null flase&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="24">
                     <mxGeometry y="26" width="240" height="154" as="geometry"/>
                 </mxCell>
                 <mxCell id="67" value="delivery" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
@@ -40,7 +40,7 @@
                 <mxCell id="47" value="name : string null:false" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="45">
                     <mxGeometry y="52" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="description :text null:false&#10;&#10;category :integer null:false&#10;&#10;statu :integer null:false&#10;&#10;shipping_charges :integer :null:false&#10;&#10;area: integer :null:false&#10;&#10;days :integer null:false&#10;&#10;price text null:false&#10;&#10;image :string null:false&#10;&#10;&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="45">
+                <mxCell id="48" value="description :text null:false&#10;&#10;category_id :integer null:false&#10;&#10;statu_id :integer null:false&#10;&#10;shipping_charges_id :integer :null:false&#10;&#10;area_id: integer :null:false&#10;&#10;days_id :integer null:false&#10;&#10;price integer null:false&#10;&#10;&#10;&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="45">
                     <mxGeometry y="78" width="260" height="242" as="geometry"/>
                 </mxCell>
                 <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="27" target="48">
