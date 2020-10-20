@@ -31,18 +31,18 @@ Association
 |category_id         |integer    | null: false       |
 |statu_id            | integer   |null: false        |
 |shipping_charges_id |integer    |null:false         |
-|area_id             | integer   | null: false       |
+|prefectures_id      | integer   | null: false       |
 |days_id             |integer    | null:false        |
 |price               | integer   | null:false        |
 
 
 Association
 
-- has_many:deliverys
+- has_one:deliveries
 - belongs_to :user
 
 
-##  deliveryテーブル
+##  deliveriesテーブル
 
 
 | Column         | Type       | Options                        |
@@ -57,10 +57,10 @@ Association
 
  Association
 
- - belongs_to :purchace
+ - belongs_to :purchaces
 
 
-## Purchace
+## Purchaces
 | Column      | Type       | Options                        |
 | item        | references | foreign_key: true              |
 | user        | references | foreign_key: true              |
@@ -69,4 +69,4 @@ Association
 
 - belongs_to:user
 - belongs_to:item
-- has_many: deliverys
+- has_one: delivery
