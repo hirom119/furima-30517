@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-10-20T06:44:32.749Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.48.2 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" version="13.6.5" etag="f-ZMXFLaNCOySQelwdZv">
+<mxfile host="65bd71144e" modified="2020-10-20T08:46:35.522Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.48.2 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" version="13.6.5" etag="FEHW2WbVsid0LzaNooaX">
     <diagram id="DOknXRsjYY6oh1aq2rMa" name="ページ1">
         <mxGraphModel dx="1230" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -16,7 +16,7 @@
                 <mxCell id="68" value="post code string null:false" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="67">
                     <mxGeometry y="26" width="320" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="69" value="prefectures :integer null:false,foreigen_key:ture" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="67">
+                <mxCell id="69" value="prefecture_id :integer null:false,foreigen_key:ture" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="67">
                     <mxGeometry y="52" width="320" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="70" value="city :string null:false&#10;&#10;address :string null:false&#10;&#10;building : string&#10;&#10;phone number :string :uniqueness: ture&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="67">
@@ -40,7 +40,7 @@
                 <mxCell id="47" value="name : string null:false" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="45">
                     <mxGeometry y="52" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="description :text null:false&#10;&#10;category_id :integer null:false&#10;&#10;statu_id :integer null:false&#10;&#10;shipping_charges_id :integer :null:false&#10;&#10;area_id: integer :null:false&#10;&#10;days_id :integer null:false&#10;&#10;price integer null:false&#10;&#10;&#10;&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="45">
+                <mxCell id="48" value="description :text null:false&#10;&#10;category_id :integer null:false&#10;&#10;status_id :integer null:false&#10;&#10;shipping_charges_id :integer :null:false&#10;&#10;prefecture_id: integer :null:false&#10;&#10;days_id :integer null:false&#10;&#10;price integer null:false&#10;&#10;&#10;&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="45">
                     <mxGeometry y="78" width="260" height="242" as="geometry"/>
                 </mxCell>
                 <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="27" target="48">

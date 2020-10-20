@@ -29,16 +29,16 @@ Association
 |name                |string     | null: false       |
 |description         | text      |null:false         |
 |category_id         |integer    | null: false       |
-|statu_id            | integer   |null: false        |
+|status_id           | integer   |null: false        |
 |shipping_charges_id |integer    |null:false         |
-|prefectures_id      | integer   | null: false       |
+|prefecture _id      | integer   | null: false       |
 |days_id             |integer    | null:false        |
 |price               | integer   | null:false        |
 
 
 Association
 
-- has_one:deliveries
+- has_one:purchase
 - belongs_to :user
 
 
@@ -48,7 +48,7 @@ Association
 | Column         | Type       | Options                        |
 | ------         | ---------- | ------------------------------ |
 | post_code      | string     | null: false                    |
-| prefectures_id | integer    | null: false                    |
+| prefecture _id | integer    | null: false                    |
 |city            | string     | null: false                    |
 |address         | string     | null: false                    |
 |building        | string     | -----------------------------  |
