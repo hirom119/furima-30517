@@ -21,6 +21,12 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Email can't be blank")
       end
+      it "emailに@がないと登録できない"do
+      @user.email = "@"
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Email is invalid")
+
+      end
       it "重複したemailが存在する場合登録できないこと" do
         @user.save
         another_user = FactoryBot.build(:user, email: @user.email)
@@ -70,7 +76,6 @@ RSpec.describe User, type: :model do
       it "first_name_kanaはカタカナでの入力でないと登録できない"do
         @user.last_name_kana= "あいうえお"
         @user.valid?
-       
         expect(@user.errors.full_messages).to include ("Last name kana 全角カタカナのみで入力して下さい")
       end
 
