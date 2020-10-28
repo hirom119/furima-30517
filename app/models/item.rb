@@ -8,15 +8,16 @@ class Item < ApplicationRecord
   belongs_to_active_hash :status
   belongs_to :user
 
-
-  validates :category_id, numericality: { other_than: 1 }
-  validates :day_id, numericality: { other_than: 1 }
-  validates :prefecture_id, numericality: { other_than: 1 }
-  validates :shipping_charge_id, numericality: { other_than: 1 }
-  validates :status_id, numericality: { other_than: 1 }
-
+  with_options numericality: {other_than:1} do
+    validates :category_id
+    validates :day_id
+    validates :prefecture_id
+    validates :shipping_charge_id
+    validates :status_id
+  end
   with_options presence: true do
     validates :name
+    validates :image
     validates :description
     validates :category_id
     validates :day_id
@@ -25,4 +26,5 @@ class Item < ApplicationRecord
     validates :status_id
     validates :price
   end
+  validates :price, numericality: { with: /\A[0-9]+\z/ , greater_than: 299, less_than:10000000}
 end

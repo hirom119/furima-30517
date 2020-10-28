@@ -6,10 +6,6 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    @status = Status.new
-    @shipping_charge = ShippingCharge.new
-    @prefecture = Prefecture.new
-    @day = Day.new
   end
 
   def create
