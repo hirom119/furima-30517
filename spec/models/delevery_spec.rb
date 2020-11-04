@@ -54,6 +54,11 @@ end
         @order.valid?
         expect(@order.errors.full_messages).to include  ("Token can't be blank")
       end
+        it "電話番号は数字のみでないと購入できない"do
+          @order.phone_number = "123456-78910"
+          @order.valid?
+          expect(@order.errors.full_messages).to include  ("Phone number is invalid")
+      end
     end
   end
   end 
