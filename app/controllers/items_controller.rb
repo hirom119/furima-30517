@@ -17,13 +17,14 @@ class ItemsController < ApplicationController
       render :new
     end
   end
+  
   def show
   end
 
   def edit
     unless current_user == @item.user
       redirect_to root_path
-  end
+    end
   end
 
   def update
