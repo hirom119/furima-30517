@@ -18,7 +18,7 @@
 Association
 
  - has_many:items
- - has_many:purchaces
+ - has_many:order
  
 
 ## items テーブル
@@ -38,7 +38,7 @@ Association
 
 Association
 
-- has_one:purchase
+- has_one:order
 - belongs_to :user
 
 
@@ -53,14 +53,14 @@ Association
 |address         | string     | null: false                    |
 |building        | string     | -----------------------------  |
 |phone_number    | string     | null false                     |
-|purchace        | references | foreign_key: true              |
+|order        | references | foreign_key: true              |
 
  Association
 
- - belongs_to :purchaces
+ - belongs_to :order
 
 
-## Purchaces
+## order
 | Column      | Type       | Options                        |
 | item        | references | foreign_key: true              |
 | user        | references | foreign_key: true              |

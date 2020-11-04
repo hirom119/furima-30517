@@ -7,8 +7,9 @@ class Item < ApplicationRecord
   belongs_to_active_hash :shipping_charge
   belongs_to_active_hash :status
   belongs_to :user
+  has_one :order
 
-  with_options numericality: {other_than:1} do
+  with_options numericality: {other_than:1} do validates :shipping_charge_id
     validates :category_id
     validates :day_id
     validates :prefecture_id
