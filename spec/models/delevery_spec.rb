@@ -9,7 +9,7 @@ end
 
   describe '商品購入'do
       context '商品購入がうまくいく時' do
-        it "郵便番号と都道府県と市区町村と番地と電話番号とtokenが存在すれば購入できる"do
+        it "郵便番号と都道府県と市区町村と番地と電話番号と建物名とtokenが存在すれば購入できる"do
         expect(@order).to be_valid
         end
         it "郵便番号が空では購入できない"do
