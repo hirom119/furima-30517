@@ -63,6 +63,11 @@ end
 group :production do
   #gem 'rails_12factor'
   gem 'unicorn', '5.4.1'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 gem 'devise'
 
