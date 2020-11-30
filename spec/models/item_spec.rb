@@ -44,7 +44,6 @@ end
       it "配送料の負担が空ではでき保存ない"do
         @item.shipping_charge_id = ''
         @item.valid?
-
         expect(@item.errors.full_messages).to include("Shipping charge is not a number", "Shipping charge can't be blank")
       end
       it "発送までの日数が空では保存できない"do
